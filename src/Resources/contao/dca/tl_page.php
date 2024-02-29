@@ -3,6 +3,7 @@
 $GLOBALS['TL_DCA']['tl_page'] = call_user_func(function(array $dca) {
     $dca['palettes']['__selector__'][] = 'hofff_shariff_share_counts';
     $dca['palettes']['root'] .= ';{hofff_shariff_legend},hofff_shariff_share_counts';
+    $dca['palettes']['rootfallback'] .= ';{hofff_shariff_legend},hofff_shariff_share_counts';
 
     $dca['subpalettes']['hofff_shariff_share_counts'] = 'hofff_shariff_cache_ttl'
         . ',hofff_shariff_facebook_app_id,hofff_shariff_facebook_secret';

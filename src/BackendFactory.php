@@ -43,7 +43,7 @@ class BackendFactory
             throw new \RuntimeException('No Shariff Backend configuration available.');
         }
 
-        $cacheDir = $this->cacheDir.'/hofff/contao-shariff/'.$page->id;
+        $cacheDir = '/tmp/hofff/contao-shariff/'.$page->id;
         $this->fs->mkdir($cacheDir);
 
         $options = [
